@@ -2,7 +2,7 @@ from ollama import chat, web_fetch, web_search
 
 available_tools = {'web_search': web_search, 'web_fetch': web_fetch}
 
-messages = [{'role': 'user', 'content': "what is ollama's new engine"}]
+messages = [{'role': 'user', 'content': "what is ollama's latest model?"}]
 
 while True:
   response = chat(
