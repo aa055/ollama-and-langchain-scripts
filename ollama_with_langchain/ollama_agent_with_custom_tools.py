@@ -12,7 +12,6 @@ def addition(numbers: list[int]) -> int:
 
     return sum(numbers)
 
-
 def subtraction(a: int, b: int) -> int:
     """Subtract two numbers.
     
@@ -33,7 +32,6 @@ def multiplication(a: int, b: int) -> int:
 
     return a * b
 
-
 def division(a: int, b: int) -> float:
     """Divide two numbers.
     
@@ -48,7 +46,7 @@ def division(a: int, b: int) -> float:
 
 
 
-llm = ChatOllama(model="llama3.2")
+llm = ChatOllama(model="qwen3:4b")
 
 agent = create_agent(
     model=llm,
@@ -58,10 +56,11 @@ agent = create_agent(
 
 # Run the agent
 response = agent.invoke(
-    {"messages": [{"role": "user", "content": "Could you add the numbers 5, 10, and 15?"}]}
+    {"messages": [{"role": "user", "content": "Could you add the numbers 5, 10, and 15? and then multiply the result by 2 and then divide by 5."}]}
 )
 
-print("Final Response: ", response["messages"][-1].content)
+print("Response object:", response)
+print("\nFinal Response: ", response["messages"][-1].content)
 print()
 
 

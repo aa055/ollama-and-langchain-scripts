@@ -18,6 +18,7 @@ response = agent.invoke(
     }
 )
 
+print(response)
 # print(response["messages"][-1].content)
 
 print()
