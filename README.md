@@ -11,7 +11,7 @@ A comprehensive collection of Python scripts demonstrating AI agent development 
 - [Folder Overview](#folder-overview)
 - [Getting Started](#getting-started)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ollama-and-langchain-scripts/
